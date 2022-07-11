@@ -1,6 +1,8 @@
 import { storageService } from './storage-service.js'
 import { utilService } from './util-service.js'
 
+const labels = ["On wheels", "Box game", "Art", "Baby", "Doll", "Puzzle", "Outdoor"]
+
 const KEY = 'toys_db'
 _createCars()
 

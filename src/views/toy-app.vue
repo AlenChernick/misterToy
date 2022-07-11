@@ -37,6 +37,9 @@ export default {
     goToEdit() {
       this.$router.push('/toy/edit')
     },
+    removeToy(toyId) {
+      this.$store.dispatch({ type: 'removeToy', id: toyId })
+    },
   },
   components: {
     toyList,
