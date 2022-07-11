@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "ggbe34",
+    "name": "Talking Doll",
+    "price": 50,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 12313213,
+    "inStock": true
+  },
+  {
+    "_id": "ggbe36",
+    "name": "Talking Doll",
+    "price": 30,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 12313213,
+    "inStock": true
+  },
+  {
+    "price": null,
+    "_id": "pIHc6"
+  }
+]
