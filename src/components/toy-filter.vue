@@ -1,7 +1,6 @@
-<!-- <template>
+<template>
   <section class="toy-filter">
     <input
-      v-focus
       v-model="filterBy.labels"
       @input="setFilter"
       type="text"
@@ -27,4 +26,4 @@ export default {
     },
   },
 }
-</script> -->
+</script>

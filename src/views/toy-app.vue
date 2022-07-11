@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import { toyService } from '../services/toy-service.js'
 import toyFilter from '../components/toy-filter.vue'
 import toyList from '../components/toy-list.vue'
 export default {
@@ -28,9 +27,6 @@ export default {
     },
   },
   methods: {
-    loadToys() {
-      toyService.query().then((toys) => (this.toys = toys))
-    },
     setFilter(filterBy) {
       this.filterBy = filterBy
     },

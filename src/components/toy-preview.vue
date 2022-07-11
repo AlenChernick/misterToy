@@ -1,18 +1,13 @@
 <template>
   <li class="toy-preview">
-    <!-- <template #header> -->
     <p><span class="toy-id">ID:</span> {{ toy._id }}</p>
     <p><span class="toy-name">Name:</span> {{ toy.name }}</p>
     <p><span class="toy-price">Price:</span> {{ $filters.currencyUSD(toy.price) }}</p>
-    <!-- </template> -->
-
-    <!-- <template #footer> -->
     <div class="btn-group">
       <button @click="goToEdit" class="btn-edit">Edit</button>
       <button @click="goToDetails" class="btn-details">Details</button>
       <button @click="removeToy(toy._id)" class="btn-remove">Delete</button>
     </div>
-    <!-- </template> -->
   </li>
 </template>
 

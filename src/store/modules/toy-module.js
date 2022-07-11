@@ -26,6 +26,7 @@ export default {
     actions: {
         loadToys({ commit }) {
             toyService.query().then((toys) => {
+                console.log('toys', toys)
                 commit({ type: 'setToys', toys })
             })
         },

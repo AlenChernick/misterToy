@@ -4,14 +4,14 @@ import { utilService } from './util-service.js'
 const labels = ["On wheels", "Box game", "Art", "Baby", "Doll", "Puzzle", "Outdoor"]
 
 const KEY = 'toys_db'
-_createCars()
+_createToys()
 
 export const toyService = {
   query,
   getById,
   remove,
   save,
-  getEmptyCar,
+  getEmptyToy,
 }
 
 function query() {
@@ -31,7 +31,7 @@ function save(toy) {
   return storageService.post(KEY, toy)
 }
 
-function getEmptyCar() {
+function getEmptyToy() {
   return {
     name: '',
     price: null,
@@ -41,7 +41,7 @@ function getEmptyCar() {
   }
 }
 
-function _createCars() {
+function _createToys() {
   let toys = utilService.loadFromStorage(KEY)
   if (!toys || !toys.length) {
     toys = [
